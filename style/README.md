@@ -243,10 +243,13 @@ Testing
 * Use `should` shorthand for [one-liners with an implicit subject].
 * Use `not_to` instead of `to_not` in RSpec expectations.
 * Prefer the `have_css` matcher to the `have_selector` matcher in Capybara assertions.
+* Avoid checking boolean equality directly. Instead, write predicate methods and
+  use appropriate matchers. [Example][predicate-example].
 
 [`expect` syntax]: http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax
 [`allow` syntax]: https://github.com/rspec/rspec-mocks#method-stubs
 [one-liners with an implicit subject]: https://github.com/rspec/rspec-expectations/blob/master/Should.md#one-liners
+[predicate-example]: /style/samples/predicate_tests.rb
 
 #### Acceptance Tests
 
